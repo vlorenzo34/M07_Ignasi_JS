@@ -54,3 +54,23 @@ p {
 #color14{background-color: #F7FE2E}
 #color15{background-color: #0080FF}
 #color16{background-color: #CC2EFA}
+
+/*MODAL MASK*/
+
+.modalmask {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 400ms ease-in;
+}
+
+.modalmask:target{
+	opacity: 1;
+	pointer-events: auto;
+}
